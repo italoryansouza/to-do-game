@@ -15,4 +15,4 @@ motivar e me organizar ao mesmo tempo, daí surgiu a ideia de criar o To Do Game
 
 
 
- Projeto feito com HTML, CSS e JS, e utilizando a biblioteca do Bootstrap
+ Projeto feito com HTML, CSS e JS.
