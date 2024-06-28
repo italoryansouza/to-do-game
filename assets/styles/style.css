@@ -16,38 +16,20 @@
     box-sizing: border-box;
 }
 
-/* layout em grid */
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 body {
     background-color: var(--black);
     font-family: var(--font_main);
 }
 
-div.header {
+div.tudo {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+h1 {
     background-color: var(--green);
     color: var(--white);
     text-align: center;
@@ -55,6 +37,8 @@ div.header {
 
 .main {
     background-color: var(--white);
+    max-width: 900px;
+    padding: 20px;
 }
 
 .perfil {
@@ -63,14 +47,37 @@ div.header {
     justify-content: center;
     column-gap: 13px;
     flex-flow: row wrap-reverse;
+    height: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 .perfil > h2 {
     color: var(--white);
 }
 
-.perfil > img {
-    justify-self: flex-end;
-    width: 80px;
-    border: 1px solid var(--white);
+ul.listTask {
+    width: 100%;
+    list-style-type: none;
+}
+
+li.task {
+    background-color: var(--green);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+img.icons {
+    width: 30px;
+    height: 30px;
+}
+
+li > p {
+    text-align: justify;
+    padding: 0 15px;
 }
