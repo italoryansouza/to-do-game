@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 868px) {
     div.perfil {
         margin-left: 30px;
     }
@@ -8,5 +8,9 @@
     div.perfil > h2 {
         position: relative;
         top: 10px;
+
+    }
+    div.content-perfil {
+        margin-left: 30px;
     }
 }
