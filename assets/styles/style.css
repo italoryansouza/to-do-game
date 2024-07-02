@@ -105,7 +105,7 @@ ul.listTask {
     list-style-type: none;
 }
 
-li.task {
+li {
     background-color: var(--gray);
     display: flex;
     flex-flow: row nowrap;
@@ -133,4 +133,9 @@ img.icons {
 li > p {
     text-align: justify;
     padding: 0 15px;
+}
+
+.done {
+    text-decoration: line-through; 
+    background-color: var(--white); 
 }
