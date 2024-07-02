@@ -54,7 +54,11 @@ function deleteTask(index){
 function uploadTasks(){
     const tasksArmazenadas = localStorage.getItem('listStorage')
 
-    taskList = JSON.parse(tasksArmazenadas)
+    // Trava para adicionar os itens ao array apenas se for encontrado itens no local storage
+
+    if(tasksArmazenadas){
+        taskList = JSON.parse(tasksArmazenadas)
+    }
 
     showTask()
 }
